@@ -11,7 +11,10 @@
 body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#eef1f4;line-height:1.5;}
 a{color:inherit;text-decoration:none;}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px;}
-header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:38px 0 30px;}
+header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:34px 0 28px;}
+.hrow{display:flex;align-items:center;gap:22px;}
+.hrow .logo{width:78px;height:78px;flex:0 0 auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));}
+@media(max-width:560px){.hrow{gap:14px}.hrow .logo{width:56px;height:56px}}
 header .kick{font-size:12px;letter-spacing:.3em;font-weight:700;color:var(--gold-l);text-transform:uppercase;}
 header h1{font-family:Georgia,serif;font-size:clamp(26px,4vw,40px);font-weight:800;margin:8px 0 6px;}
 header h1 em{font-style:normal;color:var(--gold);}
@@ -41,12 +44,15 @@ footer .slog{font-family:Georgia,serif;color:var(--gold-l);font-size:16px;margin
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <div class="kick">İstanbul Üniversitesi-Cerrahpaşa · Endüstri Mühendisliği</div>
-  <h1>Bitirme Projeleri <em>Vitrini</em></h1>
-  <p>Gerçek firmalarla, gerçek veriyle geliştirilmiş açık kaynak bitirme projeleri. Her projenin kodu klonlanıp çalıştırılabilir.</p>
-  <p class="en">Open-source capstone projects built with real companies and real data. Every project's code can be cloned and run.</p>
-</div></header>
+<header><div class="wrap"><div class="hrow">
+  <img class="logo" src="iuc_seal_gold.png" alt="İÜC">
+  <div>
+    <div class="kick">İstanbul Üniversitesi-Cerrahpaşa · Endüstri Mühendisliği</div>
+    <h1>Bitirme Projeleri <em>Vitrini</em></h1>
+    <p>Gerçek firmalarla, gerçek veriyle geliştirilmiş açık kaynak bitirme projeleri. Her projenin kodu klonlanıp çalıştırılabilir.</p>
+    <p class="en">Open-source capstone projects built with real companies and real data. Every project's code can be cloned and run.</p>
+  </div>
+</div></div></header>
 <div class="controls"><div class="wrap"><div class="row">
   <input id="search" placeholder="Proje ara… (konu, yöntem, alan)">
   <div class="chips" id="chips"></div>
