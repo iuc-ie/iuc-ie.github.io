@@ -65,211 +65,45 @@ footer .slog{font-family:Georgia,serif;color:var(--gold-l);font-size:16px;margin
   <div><a href="https://github.com/iuc-ie">github.com/iuc-ie</a> · <a href="https://endustrimuhendislik.iuc.edu.tr">endustrimuhendislik.iuc.edu.tr</a> · <a href="https://www.instagram.com/iucendustrimuh">@iucendustrimuh</a></div>
 </footer>
 <script>
-const P = [
- {
-  "name": "2026-anomaly-detection",
-  "title": "Anomaly Detection",
-  "desc": "Otomotiv yetkili servis ağında bütçe harcamalarının anomali tespiti",
-  "domain": "Finans",
-  "topics": [
-   "anomaly-detection",
-   "machine-learning",
-   "finance"
-  ],
-  "url": "https://github.com/iuc-ie/2026-anomaly-detection"
- },
- {
-  "name": "2026-atm-route-optimization",
-  "title": "Atm Route Optimization",
-  "desc": "Araç rotalama ile ATM nakit operasyonlarının optimizasyonu (bankacılık)",
-  "domain": "Lojistik",
-  "topics": [
-   "vehicle-routing",
-   "optimization",
-   "operations-research"
-  ],
-  "url": "https://github.com/iuc-ie/2026-atm-route-optimization"
- },
- {
-  "name": "2026-automated-warehouse-analysis",
-  "title": "Automated Warehouse Analysis",
-  "desc": "Forkliftli depodan dört yönlü mekik otomatik depo sistemine geçiş analizi",
-  "domain": "Lojistik",
-  "topics": [
-   "warehouse",
-   "simulation",
-   "logistics"
-  ],
-  "url": "https://github.com/iuc-ie/2026-automated-warehouse-analysis"
- },
- {
-  "name": "2026-carbon-footprint-causal-ai",
-  "title": "Carbon Footprint Causal Ai",
-  "desc": "Nedensel yapay zekâ ile karbon ayak izi azaltımı karar destek sistemi (tekstil)",
-  "domain": "Sürdürülebilirlik",
-  "topics": [
-   "causal-inference",
-   "sustainability",
-   "machine-learning"
-  ],
-  "url": "https://github.com/iuc-ie/2026-carbon-footprint-causal-ai"
- },
- {
-  "name": "2026-credit-risk-assessment",
-  "title": "Credit Risk Assessment",
-  "desc": "Kredi riskinde Causal Forest ile heterojen tedavi etkileri analizi (bankacılık)",
-  "domain": "Finans",
-  "topics": [
-   "causal-inference",
-   "credit-risk",
-   "machine-learning"
-  ],
-  "url": "https://github.com/iuc-ie/2026-credit-risk-assessment"
- },
- {
-  "name": "2026-cutting-stock-optimization",
-  "title": "Cutting Stock Optimization",
-  "desc": "Oluklu mukavva üretiminde kesim planı ve fire optimizasyonu",
-  "domain": "Üretim",
-  "topics": [
-   "cutting-stock",
-   "optimization",
-   "operations-research"
-  ],
-  "url": "https://github.com/iuc-ie/2026-cutting-stock-optimization"
- },
- {
-  "name": "2026-food-demand-forecasting",
-  "title": "Food Demand Forecasting",
-  "desc": "Talep tahminine dayalı gıda israfı azaltma modeli (kafe/restoran)",
-  "domain": "Perakende",
-  "topics": [
-   "forecasting",
-   "demand-forecasting",
-   "sustainability"
-  ],
-  "url": "https://github.com/iuc-ie/2026-food-demand-forecasting"
- },
- {
-  "name": "2026-hybrid-customer-segmentation",
-  "title": "Hybrid Customer Segmentation",
-  "desc": "Hibrit kümeleme ile genç tüketici segmentasyonu",
-  "domain": "Perakende",
-  "topics": [
-   "clustering",
-   "segmentation",
-   "machine-learning"
-  ],
-  "url": "https://github.com/iuc-ie/2026-hybrid-customer-segmentation"
- },
- {
-  "name": "2026-intermittent-demand-forecasting",
-  "title": "Intermittent Demand Forecasting",
-  "desc": "Makine öğrenmesi ile aralıklı talep ve stok tahmini (imalat)",
-  "domain": "Üretim",
-  "topics": [
-   "demand-forecasting",
-   "inventory",
-   "machine-learning"
-  ],
-  "url": "https://github.com/iuc-ie/2026-intermittent-demand-forecasting"
- },
- {
-  "name": "2026-planogram-optimization",
-  "title": "Planogram Optimization",
-  "desc": "Mağaza segmentasyonu ve kısıtlı planogram optimizasyonu (perakende)",
-  "domain": "Perakende",
-  "topics": [
-   "optimization",
-   "retail",
-   "segmentation"
-  ],
-  "url": "https://github.com/iuc-ie/2026-planogram-optimization"
- },
- {
-  "name": "2026-pos-commission-prediction",
-  "title": "Pos Commission Prediction",
-  "desc": "Makine öğrenmesiyle debit oranına dayalı POS komisyon oranı optimizasyonu (bankacılık)",
-  "domain": "Finans",
-  "topics": [
-   "machine-learning",
-   "pricing",
-   "finance"
-  ],
-  "url": "https://github.com/iuc-ie/2026-pos-commission-prediction"
- },
- {
-  "name": "2026-retail-sales-forecasting",
-  "title": "Retail Sales Forecasting",
-  "desc": "Mağaza-gün bazında perakende satış tahmini (LightGBM)",
-  "domain": "Perakende",
-  "topics": [
-   "forecasting",
-   "retail",
-   "lightgbm"
-  ],
-  "url": "https://github.com/iuc-ie/2026-retail-sales-forecasting"
- },
- {
-  "name": "2026-task-block-optimization",
-  "title": "Task Block Optimization",
-  "desc": "Toplu taşımada sürücü görev bloklarının optimizasyonu",
-  "domain": "Lojistik",
-  "topics": [
-   "optimization",
-   "scheduling",
-   "operations-research"
-  ],
-  "url": "https://github.com/iuc-ie/2026-task-block-optimization"
- },
- {
-  "name": "2026-textile-quality-anomaly-detection",
-  "title": "Textile Quality Anomaly Detection",
-  "desc": "Tekstil boyahanelerinde yapay zekâ destekli kalite anomali tespiti",
-  "domain": "Üretim",
-  "topics": [
-   "anomaly-detection",
-   "quality",
-   "machine-learning"
-  ],
-  "url": "https://github.com/iuc-ie/2026-textile-quality-anomaly-detection"
- },
- {
-  "name": "2026-waste-collection-optimization",
-  "title": "Waste Collection Optimization",
-  "desc": "Şehir içi katı atık toplama rotalarının optimizasyonu (OSB)",
-  "domain": "Sürdürülebilirlik",
-  "topics": [
-   "vehicle-routing",
-   "optimization",
-   "sustainability"
-  ],
-  "url": "https://github.com/iuc-ie/2026-waste-collection-optimization"
- },
- {
-  "name": "2026-water-consumption-forecasting",
-  "title": "Water Consumption Forecasting",
-  "desc": "Su tüketimi tahmininde temel modeller ile klasik yaklaşımların karşılaştırması",
-  "domain": "Kamu & Altyapı",
-  "topics": [
-   "forecasting",
-   "time-series",
-   "utilities"
-  ],
-  "url": "https://github.com/iuc-ie/2026-water-consumption-forecasting"
- }
-];
 const grid=document.getElementById('grid'),count=document.getElementById('count'),chipsEl=document.getElementById('chips'),search=document.getElementById('search');
-const domains=[...new Set(P.map(p=>p.domain))].sort();
-let active='Tümü',q='';
-['Tümü',...domains].forEach(d=>{const c=document.createElement('div');c.className='chip'+(d==='Tümü'?' on':'');c.textContent=d;c.onclick=()=>{active=d;[...chipsEl.children].forEach(x=>x.classList.remove('on'));c.classList.add('on');render();};chipsEl.appendChild(c);});
-search.oninput=e=>{q=e.target.value.toLowerCase().trim();render();};
+const GENERIC=['capstone-2026','industrial-engineering','iuc'];
+const DOMAIN_RULES=[
+ [/cutting|textile|intermittent|inventory|manufactur|production/,'Üretim'],
+ [/retail|planogram|segmentation|sales|food|churn|customer|commerce/,'Perakende'],
+ [/carbon|waste|sustainab/,'Sürdürülebilirlik'],
+ [/water|utilit|timetable|schedule|exam/,'Kamu & Altyapı'],
+ [/credit|pos|commission|finance|bank|anomaly/,'Finans'],
+ [/atm|route|routing|warehouse|task|logistic/,'Lojistik'],
+];
+function domainOf(n){const s=n.toLowerCase();for(const [re,d] of DOMAIN_RULES)if(re.test(s))return d;return 'Diğer';}
+function titleOf(n){return n.replace(/^2026-/,'').split('-').map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(' ');}
+let P=[],active='Tümü',q='';
 function render(){
-  const f=P.filter(p=>(active==='Tümü'||p.domain===active)&&(!q||(p.title+' '+p.desc+' '+p.domain+' '+p.topics.join(' ')).toLowerCase().includes(q)));
-  count.textContent=f.length+' proje'+(active!=='Tümü'?' · '+active:'')+(q?' · "'+q+'"':'');
-  grid.innerHTML=f.map(p=>`<a class="card" href="${p.url}" target="_blank" rel="noopener"><div class="dom">${p.domain}</div><h3>${p.title}</h3><div class="d">${p.desc}</div><div class="tp">${p.topics.map(t=>'<span>'+t+'</span>').join('')}</div><div class="go">Kodu Gör</div></a>`).join('');
+ const f=P.filter(p=>(active==='Tümü'||p.domain===active)&&(!q||(p.title+' '+p.desc+' '+p.domain+' '+p.topics.join(' ')).toLowerCase().includes(q)));
+ count.textContent=f.length+' proje'+(active!=='Tümü'?' · '+active:'')+(q?' · "'+q+'"':'');
+ grid.innerHTML=f.map(p=>`<a class="card" href="${p.url}" target="_blank" rel="noopener"><div class="dom">${p.domain}</div><h3>${p.title}</h3><div class="d">${p.desc}</div><div class="tp">${p.topics.map(t=>'<span>'+t+'</span>').join('')}</div><div class="go">Kodu Gör</div></a>`).join('');
 }
-render();
+function buildChips(){
+ const domains=[...new Set(P.map(p=>p.domain))].sort();
+ chipsEl.innerHTML='';
+ ['Tümü',...domains].forEach(d=>{const c=document.createElement('div');c.className='chip'+(d==='Tümü'?' on':'');c.textContent=d;c.onclick=()=>{active=d;[...chipsEl.children].forEach(x=>x.classList.remove('on'));c.classList.add('on');render();};chipsEl.appendChild(c);});
+}
+search.oninput=e=>{q=e.target.value.toLowerCase().trim();render();};
+count.textContent='Projeler yükleniyor…';
+fetch('https://api.github.com/orgs/iuc-ie/repos?per_page=100&sort=full_name')
+ .then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+ .then(repos=>{
+  P=repos.filter(r=>/^2026-/.test(r.name)&&!r.archived).map(r=>({
+   name:r.name,title:titleOf(r.name),desc:r.description||'',
+   topics:(r.topics||[]).filter(t=>!GENERIC.includes(t)),
+   domain:domainOf(r.name),url:r.html_url
+  })).sort((a,b)=>a.title.localeCompare(b.title,'tr'));
+  buildChips();render();
+ })
+ .catch(err=>{
+  count.textContent='';
+  grid.innerHTML='<div style="grid-column:1/-1;padding:34px;text-align:center;color:var(--mut)">Projeler yüklenemedi ('+err.message+'). Tüm projeler için <a href="https://github.com/iuc-ie" style="color:var(--navy);font-weight:700">github.com/iuc-ie</a> adresini ziyaret edebilirsiniz.</div>';
+ });
 </script>
 </body>
 </html>
